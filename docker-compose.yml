@@ -1,0 +1,9 @@
+services:
+  database:
+    container_name: postgres-datmsc3
+    image: postgres:latest
+    ports:
+     - 5433:5432
+    volumes:
+     - C:\Users\XPS 13 9305\Desktop\PAU\Courses\DAT 620_Web technology:/data/postgres
+    env_file: datmsc3.env
